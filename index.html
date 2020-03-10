@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="btn-slider__wrapper">
+                <button class="slider-btn slider-btn-previous" onclick="onPrevImg()">
+                    <img src="img/back.svg" alt="previous">
+                </button>
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        
+                        <div class="slider__track-container">
+                            <ul class="slider__track">
+                                
+                            </ul>
+                        </div>           
+                    </div>
+                    
+                </div>
+                <button class="slider-btn slider-btn-next" onclick="onNextImg()">
+                    <img src="img/next.svg" alt="next">
+                </button>    
+            </div>
+            
+                <div class="slider__nav">
+                    <button class="slider__indicator" onclick="changeImg(0, 300)"></button>
+                    <button class="slider__indicator" onclick="changeImg(1, 0)"></button>
+                    <button class="slider__indicator" onclick="changeImg(2, -300)"></button>
+                </div>
+            
+        </div>
+    </header>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
